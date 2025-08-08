@@ -1,37 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendario no oficial Consorcio Bomberos Valencia</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calendario Consorcio Bomberos Valencia</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    h1 { color: #333; }
-    p { margin-bottom: 1em; }
+    /* Reset básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f8;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #d32f2f; /* rojo bombero */
+      color: white;
+      padding: 1.5rem 2rem;
+      text-align: center;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 720px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.1rem;
+    }
+
+    a {
+      color: #d32f2f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 1rem;
+    }
+
+    footer small {
+      display: block;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
-  <h1>Calendario No oficial Consorcio Bombero Valencia</h1>
+  <header>
+    <h1>Calendario No Oficial Consorcio Bomberos Valencia</h1>
+  </header>
 
-  <p>
-    Esta aplicación gestiona los turnos de trabajo de los bomberos del Consorcio de Bomberos de Valencia.
-    No es una aplicación oficial, por lo que solo ayuda a gestionar las guardias de los bomberos.
-    En ella podrás consultar, añadir y gestionar tus guardias y también podrás sincronizar las guardias con el calendario
-    de Google del móvil. Para ello se debe aceptar que la aplicación tenga acceso al calendario en configuración.
-  </p>
+  <main>
+    <p>
+      Esta aplicación te ayuda a gestionar los turnos de trabajo de los bomberos del Consorcio de Bomberos de Valencia.
+      Ten en cuenta que no es una aplicación oficial, sino una herramienta para facilitar la gestión de las guardias.
+    </p>
 
-  <p>
-    Lee la <a href="privacy.html">política de privacidad</a> para saber cómo gestiona los datos la app.
-    En resumen: no se guarda ni gestiona ningún dato del usuario; tan solo se usa para añadir y quitar
-    guardias del Calendario de Google.
-  </p>
+    <p>
+      Podrás consultar, añadir y gestionar tus guardias, además de sincronizarlas con el calendario de Google de tu móvil. Para sincronizar, recuerda otorgar acceso al calendario en la configuración.
+    </p>
 
-  <p>En la pantalla principal podrás ver las guardias que tienes cada mes.</p>
-  <p>En configuración puedes ajustar la app y sincronizar las guardias con el calendario de Google aceptando el acceso al calendario.</p>
+    <p>
+      Consulta la <a href="privacy.html">Política de Privacidad</a> para entender cómo se manejan tus datos. En resumen, la app no guarda ni gestiona tus datos personales; sólo usa permisos para añadir y eliminar eventos en tu calendario.
+    </p>
 
-  <footer style="margin-top: 2em; font-size: 0.9em; color: gray;">
+    <p>
+      En la pantalla principal podrás ver las guardias de cada mes y en la configuración ajustar la app a tus necesidades.
+    </p>
+  </main>
+
+  <footer>
     <p>Calendario Consorcio Bomberos Valencia</p>
-    <p><small>Esto es todo amigos.</small></p>
+    <small>Esta página utiliza cookies de Google para ofrecer sus servicios y analizar el tráfico. Al continuar navegando, aceptas su uso.</small>
   </footer>
 </body>
 </html>
